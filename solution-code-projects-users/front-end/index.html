@@ -30,8 +30,14 @@
       <div class="pure-menu pure-menu-horizontal">
         <a href="#" class="pure-menu-heading pure-menu-link" ui-sref-active="active" ui-sref="home"><h1>LOGGING</h1></a>
         <ul class="pure-menu-list">
+          
+          <li class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="welcome">Welcome</a></li>
+
+          <li ng-show="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="calendar">Advent Calendar</a></li>
+
           <li ng-hide="users.checkLoggedIn()"class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="login">Login</a></li>
           <li ng-hide="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="register">Register</a></li>
+
           <li ng-show="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref="home" ng-click="users.logout()">Logout</a></li>
         </ul>
       </div>

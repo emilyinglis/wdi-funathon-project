@@ -31,7 +31,7 @@ function UsersController(User, TokenService, $state, CurrentUser, $auth){
     var token = res.token ? res.token : null;
     if (token) {
       self.getUsers();
-      $state.go('home');
+      $state.go('calendar');
     }
     // console.log(res);
     self.user = TokenService.decodeToken();

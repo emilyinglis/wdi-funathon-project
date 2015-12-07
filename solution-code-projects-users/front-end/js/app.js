@@ -13,13 +13,13 @@ angular
 
   function MainRouter($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('calendar', {
-        url: "/",
-        templateUrl: "calendar.html"
-      })
       .state('welcome', {
-        url: "/welcome",
+        url: "/",
         templateUrl: "welcome.html"
+      })
+      .state('calendar', {
+        url: "/calendar",
+        templateUrl: "calendar.html"
       })
       .state('login', {
         url: "/login",

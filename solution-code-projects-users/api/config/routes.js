@@ -8,7 +8,7 @@ router.post('/login', authenticationsController.login);
 router.post('/register', authenticationsController.register);
 
 // Login and register welcome page - working
-router.route('/welcome')
+router.route('/calendar')
 
 // Calendar / landing page (logged in)
 router.route('/')
