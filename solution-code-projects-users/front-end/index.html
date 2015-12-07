@@ -39,10 +39,16 @@
           <li ng-hide="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="register">Register</a></li>
 
           <li ng-show="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref="home" ng-click="users.logout()">Logout</a></li>
+
+          <li ng-show="users.checkLoggedIn()" class="pure-menu-item">{{ users.name }}</li>
         </ul>
       </div>
     </nav>
   </header>
+
+  <h1>{{ email }}</h1>
+  <h1 ng-repeat="user in users">{{ user.local.email }}</h1>
+
 
   <main ui-view></main>
 
