@@ -1,0 +1,35 @@
+<!-- Login form -->
+<section id="login" ng-hide="users.checkLoggedIn()">
+  <div class="pure-g">
+    <div class="pure-u-1">
+      <button ng-click="users.authenticate('facebook')">Sign in with Facebook</button>
+
+      <form name="users.loginForm" class="pure-form pure-form-aligned" ng-submit="users.login()" novalidate>
+        <legend>Login</legend>
+
+        <div class="pure-control-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="Enter your email" ng-model="users.user.email" required>
+        </div>
+
+        <div class="ng-message-error pure-control-group" ng-messages="users.loginForm['email'].$error" ng-show="(users.loginForm.$submitted && users.loginForm['email'].$invalid)">
+          <p ng-message="required">Email is required.</p>
+        </div>
+
+        <div class="pure-control-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Enter your password" ng-model="users.user.password" required>
+        </div>
+
+        <div class="ng-message-error pure-control-group" ng-messages="users.loginForm['password'].$error" ng-show="(users.loginForm.$submitted && users.loginForm['password'].$invalid)">
+          <p ng-message="required">Password is required.</p>
+        </div>
+
+        <div class="pure-controls">
+          <button type="submit" class="pure-button pure-button-primary">Login</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>

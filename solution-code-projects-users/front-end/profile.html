@@ -1,0 +1,8 @@
+{{ users.user }}
+
+<!-- Logged in home display -->
+<div ng-show="users.checkLoggedIn()" class="pure-g user-display">
+  <div class="pure-u-1 logged-in-info"><h3>LOGGING AS:</h3></div>
+  <div class="pure-u-1 logged-in-info"><h2>{{ users.user.local.fullname | uppercase }}</h2></div>
+  <div class="pure-u-1 logged-in-info"><img ng-src="{{ users.user.local.image }}"></div>
+</div>

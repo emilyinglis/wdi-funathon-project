@@ -1,0 +1,119 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+/*header nav*/
+
+header nav {
+  max-width: 960px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 25px;
+}
+
+.pure-menu .pure-menu-link, .pure-menu-item:hover {
+  background: transparent;
+}
+
+/*forms*/
+
+.pure-form-aligned .pure-control-group label {
+  text-align: left;
+}
+
+.pure-form-aligned {
+  padding-left: 16px;
+}
+
+.pure-form input[type=text] {
+  width: 75%;
+}
+.pure-form input[type=password] {
+  width: 75%;
+}
+
+#login legend {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+#register legend {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.ng-message-error {
+  height: 30px;
+  width: 75%;
+  margin-left: 180px;
+  line-height: 30px;
+  color: #fff;
+  background: #E57373;
+  border: 1px solid #B71C1C;
+  border-radius: 5px;
+}
+
+.ng-message-error p {
+  margin-left: 10px;
+}
+
+/*buttons*/
+
+.pure-button-primary {
+  margin-left: 5px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.pure-button-primary:hover {
+  text-decoration: underline;
+  background: #FAFAFA;
+  border: 1px solid #000;
+}
+
+/*Home display*/
+.home-display .home-info {
+  text-align: center;
+}
+
+.home-display .home-info{
+  margin-bottom: 25px;
+}
+
+.home-display .home-info img {
+  width: 600px;
+  border-radius: 5px;
+}
+/*Profile display*/
+
+.user-display {
+  text-align: center;
+}
+
+.user-display .logged-in-info{
+  margin-bottom: 25px;
+}
+
+.user-display .logged-in-info img {
+  border-radius: 5px;
+}
+
+.user-display h3 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.user-display h2 {
+  color: #000;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+
+
