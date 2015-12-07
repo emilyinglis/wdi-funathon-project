@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="logging">
 <head>
-  <title>Logging</title>
+  <title>Advent Calendar</title>
   <!-- External Files -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-messages.js"></script>
@@ -16,6 +16,7 @@
   <script type="text/javascript" src="./js/services/currentUser.js"></script>
   <script type="text/javascript" src="./js/models/user.js"></script>
   <script type="text/javascript" src="./js/controllers/usersController.js"></script>
+  <script type="text/javascript" src="./vendor/snowstorm.js"></script>
 <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="./css/reset.css">
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
@@ -28,10 +29,8 @@
   <header>
     <nav>
       <div class="pure-menu pure-menu-horizontal">
-        <a href="#" class="pure-menu-heading pure-menu-link" ui-sref-active="active" ui-sref="home"><h1>LOGGING</h1></a>
+        <a href="#" class="pure-menu-heading pure-menu-link" ui-sref-active="active" ui-sref="home"><h1>Advent<strong>Calendar</strong></h1></a>
         <ul class="pure-menu-list">
-          
-          <li class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="welcome">Welcome</a></li>
 
           <li ng-show="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="calendar">Advent Calendar</a></li>
 
@@ -45,6 +44,41 @@
       </div>
     </nav>
   </header>
+
+  <section ng-show="users.checkLoggedIn()">
+    <ul class="calendar">
+        <li class="day" id="open1">1</li>
+        <li class="day" id="open2">2</li>
+        <li class="day" id="open3">3</li>
+        <li class="day" id="open4">4</li>
+        <li class="day" id="open5">5</li>
+        <li class="day" id="open6">6</li>
+        <li class="day" id="open7">7</li>
+        <li class="day" id="open8">8</li>
+        <li class="day" id="open9">9</li>
+        <li class="day" id="open10">10</li>
+        <li class="day" id="open11">11</li>
+        <li class="day" id="open12">12</li>
+        <li class="day" id="open13">13</li>
+        <li class="day" id="open14">14</li>
+        <li class="day" id="open15">15</li>
+        <li class="day" id="open16">16</li>
+        <li class="day" id="open17">17</li>
+        <li class="day" id="open18">18</li>
+        <li class="day" id="open19">19</li>
+        <li class="day" id="open20">20</li>
+        <li class="day" id="open21">21</li>
+        <li class="day" id="open22">22</li>
+        <li class="day" id="open23">23</li>
+        <li class="day" id="open24">24</li>
+      </ul>
+
+
+      <!-- require below tag - no idea why, cllllassic -->
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src="./js/calendar.js"></script>
+          
+    </section>
 
   <main ui-view></main>
 

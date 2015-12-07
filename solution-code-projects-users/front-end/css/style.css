@@ -3,6 +3,7 @@ body {
   margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
+  background-color: #1C465B;
 }
 
 /*header nav*/
@@ -15,6 +16,7 @@ header nav {
 
 .pure-menu .pure-menu-link, .pure-menu-item:hover {
   background: transparent;
+  color: #D8D8D8;
 }
 
 /*forms*/
@@ -38,12 +40,14 @@ header nav {
   font-size: 32px;
   text-align: left;
   margin-bottom: 25px;
+  color: #D8D8D8;
 }
 
 #register legend {
   font-size: 32px;
   text-align: left;
   margin-bottom: 25px;
+  color: #D8D8D8;
 }
 
 .ng-message-error {
@@ -115,5 +119,40 @@ header nav {
   font-weight: 300;
 }
 
+label {
+  color: #D8D8D8;
+}
+
+p {
+  font-size: 30px;
+  color: #D8D8D8;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/*body {
+  text-align: center;
+  margin: auto 0;
+  background: white;
+}*/
+
+ul.calendar {
+  margin: 0 auto;
+  width: 960px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+li.day {
+  list-style: none;
+  width: 158px;
+  height: 158px;
+  float: left;
+  border: 1px solid #000;
+  line-height: 158px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
 
 
