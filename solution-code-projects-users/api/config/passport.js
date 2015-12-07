@@ -17,12 +17,11 @@ module.exports = function(passport) {
       // No error but already an user registered
       if (user) return done(null, false, { message: "Please choose another email." });
 
-      var newUser            = new User();
-      newUser.local.email    = email;
-      newUser.local.username = req.body.username;
-      newUser.local.fullname = req.body.fullname;
-      newUser.local.image    = req.body.image;
-      newUser.local.password = User.encrypt(password);
+      var newUser             = new User();
+      newUser.local.name      = req.body.name;
+      newUser.local.image     = req.body.image;
+      newUser.local.email     = email;
+      newUser.local.password  = User.encrypt(password);
 
       newUser.save(function(err, user) {
         // Error found
@@ -34,5 +33,4 @@ module.exports = function(passport) {
       });
     });
   }));
-  
 }

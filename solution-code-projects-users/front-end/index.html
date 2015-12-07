@@ -32,10 +32,6 @@
         <ul class="pure-menu-list">
           <li ng-hide="users.checkLoggedIn()"class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="login">Login</a></li>
           <li ng-hide="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="register">Register</a></li>
-          <li ng-show="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="profile">My Profile</a></li>
-          
-          <li ng-show="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref-active="active" ui-sref="users">Users</a></li>
-          
           <li ng-show="users.checkLoggedIn()" class="pure-menu-item"><a class="pure-menu-link" ui-sref="home" ng-click="users.logout()">Logout</a></li>
         </ul>
       </div>

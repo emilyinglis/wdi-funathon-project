@@ -13,9 +13,13 @@ angular
 
   function MainRouter($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('home', {
+      .state('calendar', {
         url: "/",
-        templateUrl: "home.html"
+        templateUrl: "calendar.html"
+      })
+      .state('welcome', {
+        url: "/welcome",
+        templateUrl: "welcome.html"
       })
       .state('login', {
         url: "/login",
@@ -25,14 +29,6 @@ angular
         url: "/register",
         templateUrl: "register.html"
       })
-      .state('profile', {
-        url: "/profile",
-        templateUrl: "profile.html"
-      })
-      .state('users', {
-        url: "/users",
-        templateUrl: "users.html"
-      })
-
+      
     $urlRouterProvider.otherwise("/");
   }

@@ -7,16 +7,23 @@ var authenticationsController = require('../controllers/authenticationsControlle
 router.post('/login', authenticationsController.login);
 router.post('/register', authenticationsController.register);
 
-router.route('/')
-  .get(usersController.usersIndex)
- 
-router.route('/users')
-  .get(usersController.usersIndex)
-//   .post(usersController.usersCreate)
+// Login and register welcome page - working
+router.route('/welcome')
 
-router.route('/users/:id') 
-  .get(usersController.usersShow)
-  .patch(usersController.usersUpdate)
-  .delete(usersController.usersDelete)
+// Calendar / landing page (logged in)
+router.route('/')
+
+// Must have:
+ // / (calendar)
+ // welcome - login or register
+ // -->login - presently have but will turn welcome page into login / register with $http
+ // -->register - presently have but will turn welcome page into login / register with $http
+ 
+// Nice to have:
+ //my profile - nice to have
+ // router.route('/users/:id') 
+ //   .get(usersController.usersShow)
+ //   .patch(usersController.usersUpdate)
+ //   .delete(usersController.usersDelete)
 
 module.exports = router;

@@ -9,7 +9,7 @@ function CurrentUser(TokenService){
   self.user = {} 
 
   self.saveUser = function(user){
-    self.user = user
+    self.user = user;
   }
 
   self.getUser = function(){
