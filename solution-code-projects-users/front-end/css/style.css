@@ -14,9 +14,13 @@ header nav {
   margin-bottom: 25px;
 }
 
-.pure-menu .pure-menu-link, .pure-menu-item:hover {
+.pure-menu .pure-menu-link {
   background: transparent;
   color: #D8D8D8;
+}
+
+.pure-menu-link:hover {
+  color: red;
 }
 
 /*forms*/
@@ -153,6 +157,10 @@ li.day {
   font-size: 40px;
   text-align: center;
   font-weight: bold;
+}
+
+li.day:hover {
+  background: #D8D8D8;
 }
 
 
